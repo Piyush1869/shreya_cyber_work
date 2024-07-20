@@ -1,5 +1,4 @@
 [[redirects]]
-  from = "/*"
+  from = "/home"
   to = "/loginpage"
   status = 302
-  force = true
