@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
-  to = "/loginpage.php"
+  to = "/loginpage"
   status = 302
  
