@@ -3,6 +3,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-image: url("https://cdn-images-1.medium.com/max/854/1*8tI2pUzyviWb6wqD76sbaw.gif");
+    color: #ffffff;
+
+    background-size: cover;
 }
 .sidenav {
     height: 100%;
@@ -35,9 +38,98 @@ body {
 .header {
     padding-top: 10%;
     margin-top: 1%;
-    background-color: #333;
+    background-color: #333333b6;
     color: #f1f1f1;
     padding: 20px;
     text-align: center;
-    font-size: 36px;
+ 
+    border-radius: 10px;
+    box-shadow: 0 0 10px white ;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid transparent;
+
+    border-image: linear-gradient(to right, #ff00c8, #ff0000, #6200ff) 1;
+    border-image-slice: 1;
+    animation: shine 2s infinite;
+    
 }
+
+@keyframes shine {
+    0% {
+        border-image: linear-gradient(to right, #ff00c8, #ff0000, #0051ff) 1;
+    }
+    33% {
+        border-image: linear-gradient(to right, #ff0000, #6200ff, #00ffff) 1;
+    }
+    66% {
+        border-image: linear-gradient(to right, #a6ff00, #ff00c8, #ff0000) 1;
+    }
+    100% {
+        border-image: linear-gradient(to right, #ff00c8, #ff0000, #6200ff) 1;
+    }
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 0 0 10px white ;
+    
+}
+table, th, td,tr {
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center; 
+    background-color: #11111186;
+    position: relative;
+    
+
+    }
+
+
+
+
+    /* web width */
+    /* For mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .sidenav {
+      width: 100px;
+    }
+    .main {
+      margin-left: 100px;
+    }
+    .header {
+      font-size: 24px;
+    }
+    table, th, td, tr {
+      font-size: 12px;
+    }
+  }
+  
+  /* For tablets (min-width: 769px) and (max-width: 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .sidenav {
+      width: 150px;
+    }
+    .main {
+      margin-left: 150px;
+    }
+    .header {
+      font-size: 28px;
+    }
+    table, th, td, tr {
+      font-size: 14px;
+    }
+  }
+  
+  /* For desktop devices (min-width: 1025px) */
+  @media only screen and (min-width: 1025px) {
+    .sidenav {
+      width: 200px;
+    }
+    .main {
+      margin-left: 200px;
+    }
+    .header {
+      font-size: 36px;
+    }
+    table, th, td, tr {
+      font-size: 16px;
+    }
+  }
