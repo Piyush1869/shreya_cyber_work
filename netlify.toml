@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "/loginpage"
+  status = 302
+  force = true
