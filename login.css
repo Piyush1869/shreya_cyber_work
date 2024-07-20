@@ -38,6 +38,7 @@ input[type=password] {
   background-color: #0000006b;
   box-shadow: 0 0 10px red ;
   transition: background-color 0.4s ease;
+  color:#ccc
 }
 input[type=password]:hover{
   background-color: #ffffff6b;

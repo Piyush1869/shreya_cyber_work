@@ -31,6 +31,8 @@
       const password = document.getElementById("password").value;
        
       if ( password == id_password) {
+        // After successful login
+        history.replaceState({}, '', '/');
         window.location.href = "./home/home.html";
         }
         else {
