@@ -2,3 +2,4 @@
   from = "/*"
   to = "/loginpage"
   status = 302
+ 
