@@ -8,6 +8,8 @@ body {
     background-size: cover;
 }
 .sidenav {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
     height: 100%;
     width: 200px;
     position: fixed;
@@ -29,7 +31,15 @@ body {
     transition: background-color 0.4s ease;
 }
 .sidenav a:hover {
-    color: #ffee00;
+  font-family: 'Times New Roman', Times, serif;
+  border-image: linear-gradient(to right, #ff00c8, #ff0000, #6200ff) 1;
+  border-image-slice: 1;
+  animation: shine 2s infinite;
+  border: 3px solid transparent;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #11111186;
+  color: whitesmoke;;
 }
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
@@ -66,7 +76,13 @@ body {
    
 }
 
+#Logout:hover{
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+ 
+  
 
+}
 
 
 .border{
