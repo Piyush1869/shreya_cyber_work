@@ -14,7 +14,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #000000dc;
     overflow-x: hidden;
     padding-top: 20px;
     transition: background-color 0.4s ease;
@@ -23,13 +23,13 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 18px;
-    color: #818181;
+    color: #b9b9b9;
     display: block;
     box-shadow: 0 0 5px red;
     transition: background-color 0.4s ease;
 }
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #ffee00;
 }
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
@@ -37,7 +37,7 @@ body {
 }
 .profile {
     position: absolute;
-    top: 20px;
+    top: 40px;
     right: 20px;
 }
 .profile_image{
@@ -49,15 +49,12 @@ body {
 
 }
 .header {
-    
-
-    padding-top: 10%;
-    margin-top: 1%;
+    margin-top: 0%;
     background-color: #333333b6;
     color: #f1f1f1;
-    padding: 20px;
+    padding: 1px;
     text-align: center;
- 
+     
     border-radius: 10px;
     box-shadow: 0 0 10px white ;
     font-family: 'Times New Roman', Times, serif;
@@ -66,14 +63,23 @@ body {
     border-image: linear-gradient(to right, #ff00c8, #ff0000, #6200ff) 1;
     border-image-slice: 1;
     animation: shine 2s infinite;
-    
+   
 }
+
+
+
+
 .border{
     font-family: 'Times New Roman', Times, serif;
     border-image: linear-gradient(to right, #ff00c8, #ff0000, #6200ff) 1;
     border-image-slice: 1;
     animation: shine 2s infinite;
-    
+    border: 3px solid transparent;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #11111186;
+    color: whitesmoke;
+   
 }
 @keyframes shine {
     0% {
@@ -109,48 +115,93 @@ table, th, td,tr {
     /* web width */
     /* For mobile devices (max-width: 768px) */
 @media only screen and (max-width: 768px) {
-    .sidenav {
-      width: 100px;
-    }
-    .main {
-      margin-left: 100px;
-    }
-    .header {
-      font-size: 24px;
-    }
-    table, th, td, tr {
-      font-size: 12px;
-    }
+  body {
+    background-image: url("https://cdn-images-1.medium.com/max/854/1*8tI2pUzyviWb6wqD76sbaw.gif");
+    background-size: 100% 300px; /* adjust background size for mobile */
   }
-  
-  /* For tablets (min-width: 769px) and (max-width: 1024px) */
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .sidenav {
-      width: 150px;
-    }
-    .main {
-      margin-left: 150px;
-    }
-    .header {
-      font-size: 28px;
-    }
-    table, th, td, tr {
-      font-size: 14px;
-    }
+  .sidenav {
+    width: 100px;
   }
-  
-  /* For desktop devices (min-width: 1025px) */
-  @media only screen and (min-width: 1025px) {
-    .sidenav {
-      width: 200px;
-    }
-    .main {
-      margin-left: 200px;
-    }
-    .header {
-      font-size: 36px;
-    }
-    table, th, td, tr {
-      font-size: 16px;
-    }
+  .main {
+    margin-left: 100px;
   }
+  .header {
+    font-size: 24px;
+    padding-top: 30%; /* adjust padding for mobile */
+    margin-top: 5%; /* adjust margin for mobile */
+  }
+  table, th, td, tr {
+    
+    font-size: 12px;
+  }
+  .profile_image {
+   
+    padding-top: 1%; 
+    width: 50px;/* adjust profile image size for mobile */
+    height:50px;
+  }
+  .profile{
+    padding-top: 1%;
+
+  }
+  .border{
+    padding-bottom: 5px;
+    text-align: center;
+   
+    
+    
+  }
+
+}
+
+/* For tablets (min-width: 769px) and (max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-image: url("https://cdn-images-1.medium.com/max/854/1*8tI2pUzyviWb6wqD76sbaw.gif");
+    background-size: 100% 400px; /* adjust background size for tablet */
+  }
+  .sidenav {
+    width: 150px;
+  }
+  .main {
+    margin-left: 150px;
+  }
+  .header {
+    font-size: 28px;
+    padding-top: 10%; /* adjust padding for tablet */
+    margin-top: 1%; /* adjust margin for tablet */
+  }
+  table, th, td, tr {
+    font-size: 14px;
+  }
+  .profile_image {
+    width: 75px; /* adjust profile image size for tablet */
+    height: 75px;
+  }
+}
+
+/* For desktop devices (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+  body {
+    background-image: url("https://cdn-images-1.medium.com/max/854/1*8tI2pUzyviWb6wqD76sbaw.gif");
+    background-size: 100% 600px; /* adjust background size for desktop */
+  }
+  .sidenav {
+    width: 200px;
+  }
+  .main {
+    margin-left: 200px;
+  }
+  .header {
+    font-size: 36px;
+    padding-top: 1%; /* adjust padding for desktop */
+    margin-top: 1%; /* adjust margin for desktop */
+  }
+  table, th, td, tr {
+    font-size: 16px;
+  }
+  .profile_image {
+    width: 100px; /* adjust profile image size for desktop */
+    height: 100px;
+  }
+}
