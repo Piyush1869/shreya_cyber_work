@@ -1,0 +1,33 @@
+body{
+    background-image: url('https://i.makeagif.com/media/3-26-2024/nWbJVc.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    color: whitesmoke;
+    text-align: center;
+    border: 5px black solid;
+    box-shadow: 0 20px 20px 10px red ;
+    padding: 20px;
+    width: 50%;
+  
+    /* aign cntiner to center  */
+    margin: 0 auto;
+
+    background-color: #131111a6;
+    font-size: 20px;
+}
+input{
+    color: red;
+    width: 95%;
+    /* makeit requied  */
+    border: 2px solid black ;
+    padding: 10px;
+
+}
+input:hover{
+    background-color: #ff1717;
+    box-shadow: 0 3px 5px 5px #4140406e;
+    color : #00ff2a;
+}

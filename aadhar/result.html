@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Result</title>
+</head>
+<body>
+    <h2>User Information Result</h2>
+    <div id="result"></div>
+
+    <script>
+        const formData = JSON.parse(localStorage.getItem('formData'));
+        const resultHTML = `
+            <p>Name: ${formData.name}</p>
+            <p>Address: ${formData.address}</p>
+            <p>Image: ${formData.image.name}</p>
+        `;
+        document.getElementById('result').innerHTML = resultHTML;
+    </script>
+</body>
+</html>

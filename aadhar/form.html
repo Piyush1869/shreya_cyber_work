@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aadhar formate </title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class=" container">
+    <h1>AADHAR FORMATE </h1>
+    <!--name -->
+    <!-- make it required  -->
+     <label for="name">Name:</label>
+
+    <input type="text"  id="aadhar_name"  placeholder="Enter your aadhar name" required><br><br>
+
+   <!-- name in hindi  -->
+    <label for="name">नाम:</label>
+    <input type="text" id="aadhar_name_hin"  placeholder=" aadhar name in hindi "required><br><br>
+
+    <!-- aadhar number -->
+     <label for="aadhar_number">Aadhar Number:</label>
+    <input type="number" id="aadhar_number"  placeholder="Enter your aadhar number" required><br><br>
+    <!--address -->
+    <label for="address">Address:</label>
+    <input type="text" id ="aadhar_address"  placeholder="Enter your aadhar address"required><br><br>
+     <!-- address in hindi  -->
+      <label for="address">पता:</label>
+    <input type="text" id ="aadhar_address_hin"  placeholder=" aadhar address in hindi "required><br><br>
+
+
+
+   <!-- pincode  -->
+    <label for="pincode">Pincode:</label>
+    <input type="number" id="aadhar_pincode"  placeholder="Enter your aadhar pincode"required><br><br>
+    <!-- Date of birth  -->
+     <label for="date_of_birth">Date of Birth:</label>
+    <label for="date of birth ">date of birth </label>
+    <input type="date" id="date_of_birth"required><br><br>
+    <!--image -->
+    <label for="image">Image:</label>
+    <label for="text">image:</label>
+     <input type="text" name="" id="image" placeholder="enter image url / path "required><br><br>
+     <!--gender  -->
+     <label for="gender">Gender:</label>
+     Gender 
+     <select  id="gender"required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+     </select>  
+     <br><br>
+     <!--relation -->
+     <label for="relation">Relation:</label>
+    Relation 
+    <select id="relation"required>
+        <option value="father">Father</option>
+        <option value="Husband">husband </option>
+    </select><br><br>
+    <!--relation name -->
+    <label for="relation_name">Relation Name:</label>
+    <input type="text" id="name_relation" placeholder="Enter your name relation"required><br><br>
+<!-- relation name in hindi -->
+ <label for="relation_name">संबंध का नाम:</label>
+    <input type="text" id="name_relation_hindi" placeholder=" name relation in hindi"required><br><br>
+   <input type="submit" value="submit" onclick="aadhar()">
+   </div>
+</body>
+</html>
