@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form">
+     <h1 class="heading">Pan Card Print Portal By<br> Piyush Kumar Sinha </h1>
+
+
+        <!-- set all input required  -->
+
+
+
+        <label for="">image </label>
+        <input type="text" id="image" placeholder='image address' >
+     <label for="name"> name :</label>
+     <input type="text" id="name" placeholder=" name ">
+     <label for="dob"> Date of birth   </label>
+     <input type="date" name="" id="dob">
+     <label for="pan_numner">Pan Number </label>
+     <input type="text" id="pan_number" placeholder="all in capitals">
+     <label for="">Gender</label>
+     <!-- aaad a radio button for gander  and set it compulsory-->
+      <input type="radio" id="gender" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="gender" name="female" value="Female">
+      <label for="female">Female</label><br>
+     <label for="fathrs_name"> Father's Name </label>
+     <input type="text" id="fathers_name" placeholder=" fathers name ">
+     <label for="">Sign file address</label>
+     <input type="text" id="sign" placeholder="sign address ">
+     <input type="submit" onclick="Pan()">
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
